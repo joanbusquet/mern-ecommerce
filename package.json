@@ -1,0 +1,23 @@
+{
+  "name": "bradtraversy-mern-ecommerce",
+  "version": "1.0.0",
+  "description": "MERN backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joanbusquet/mern-ecommerce.git"
+  },
+  "author": "Joan Busquet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joanbusquet/mern-ecommerce/issues"
+  },
+  "homepage": "https://github.com/joanbusquet/mern-ecommerce#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "express": "^4.17.1"
+  }
+}

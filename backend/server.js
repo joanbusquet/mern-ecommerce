@@ -1,8 +1,8 @@
-const express = require('express')
-const products = require('./data/mocks/products')
+import express from 'express'
+import dotenv from 'dotenv'
+import products from './data/products.js'
 
-// Environtment variables
-const dotenv = require('dotenv')
+// Environment variables
 dotenv.config()
 
 const app = express()

@@ -5,6 +5,7 @@ import connectDB from './config/db.js'
 import { errorHandler, notFound } from './middlewares/errorMiddleware.js'
 
 import productRoutes from './routes/productRoutes.js'
+import userRoutes from './routes/userRoutes.js'
 
 // Environment variables
 dotenv.config()
@@ -14,11 +15,15 @@ connectDB()
 
 const app = express()
 
+// Body parser
+app.use(express.json())
+
 app.get('/', (req, res) => {
   res.send('API is running')
 })
 
 app.use('/api/products', productRoutes)
+app.use('/api/users', userRoutes)
 
 // Error hander custom middlewares
 app.use(notFound)
